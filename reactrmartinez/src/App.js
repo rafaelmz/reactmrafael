@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+
 import './App.css';
+import NavBar from './components/NavBar/NavBar';
+import ReactLogo from './assets/img/reactlogo.jpg';
+import ReactLog from './assets/img/reactlog.png'
+
+const style =  {
+  backgroundColor: 'grey',
+  fontSize: '25px',
+
+}
+
+NavBar()
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App" style={ style } onClick=''>
+          <h1>ReactMrafael</h1>
+          <img src={ReactLogo} alt="img" />
+          <NavBar />
+          <img src={ReactLog} alt="img" />
+      </div>
   );
 }
 
