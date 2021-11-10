@@ -8,15 +8,17 @@ function ItemCount ({initial, stock, onAdd}) {
     }
 
     const handlerRm =()=>{
-        if(count > initial) setCount(count - 0)
+        if(count > initial) setCount(count - 1)
     }   
 
     const handlerOnAdd=()=>{
         onAdd(count)
         setCount(initial)
     }
+        
 
-    
+      
+
     return (
         <div className="w-150">
             <button className="btn btn-primary" onClick={handlerAdd}>Sumar</button>
@@ -28,6 +30,7 @@ function ItemCount ({initial, stock, onAdd}) {
     )
  
 }
+
 
 
 export default ItemCount

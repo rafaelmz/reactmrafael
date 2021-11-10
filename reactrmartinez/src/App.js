@@ -26,7 +26,7 @@ function App() {
         </Navbar>
         <ItemListContainer greeting='Catalogo de productos' />
         <br/>
-        <ItemCount />
+        <ItemCount initial={1} stock={5} />
       </div>
       
   );
